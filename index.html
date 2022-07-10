@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>m2-entrega-blog-m2</title>
+  <title>Canadiano's Blog</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <base href="/">
+  <link rel="stylesheet" href="./src/css/base.css">
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+
 </head>
+
 <body>
-  
+
+  <header>
+    <div class="container">
+      <div class="user-info">
+        <h3>Canadiano's Blog</h3>
+      </div>
+
+      <div class="user-login">
+        <button class="homepage-login-button">Login</button>
+        <button class="homepage-signup-button">Cadastro</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="signup-modal">
+    <div class="inner-signup-modal">
+      <button id="close-signup-modal-button">Fechar</button>
+      <h2>Cadastro</h2>
+      <form class="signup-form" action="#">
+        <input type="text" name="username" id="username" placeholder="Nome de usuário" required>
+        <input type="email" name="email" id="signup-email" placeholder="E-mail" required>
+        <input type="text" name="avatarUrl" id="avatarUrl" placeholder="Imagem de perfil" required>
+        <input type="password" name="password" id="signup-password" placeholder="Senha" required>
+        <button id="signup-button">Cadastrar</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="login-modal">
+    <div class="inner-login-modal">
+      <button id="close-login-modal-button">Fechar</button>
+      <h2>Login</h2>
+      <form class="login-form" action="#">
+        <input type="email" name="email" id="login-email" placeholder="E-mail" required>
+        <input type="password" name="password" id="login-password" placeholder="Senha" required>
+        <button id="login-button">Login</button>
+      </form>
+    </div>
+  </div>
+  <script type="module" src="/src/js/controllers/script.js"></script>
 </body>
+
 </html>

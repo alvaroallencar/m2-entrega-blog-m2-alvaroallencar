@@ -1,0 +1,19 @@
+:root {
+    --color-blue-light: rgb(100, 149, 237);
+
+    --color-yellow: rgb(237, 188, 100);
+    --color-yellow-light: rgb(251, 221, 165); 
+
+    --color-grey: rgb(128, 128, 128);
+    --color-grey-light: rgb(249, 249, 249);
+
+    --color-white: rgb(255, 255, 255);
+
+    --color-black: rgb(0, 0, 0);
+    --color-black-light: rgb(95, 92, 92);
+
+    --color-red-light: rgb(237, 100, 100);
+
+    --font-base: 'Montserrat', sans-serif;
+    --font-posts: 'Roboto', sans-serif;
+}
