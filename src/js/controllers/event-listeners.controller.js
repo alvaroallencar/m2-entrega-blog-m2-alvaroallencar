@@ -104,7 +104,7 @@ class EventListeners {
 
             if (localStorage.getItem("@Blog-Kenzie-M2:token") !== null) {
 
-                window.location.href = "../src/views/postsPage.html";
+                window.location.href = "/src/views/postsPage.html";
 
             }
         });
@@ -157,17 +157,17 @@ class EventListeners {
             const editPostModal = document.querySelector(".edit-post-modal");
             editPostModal.style.display = "flex";
 
-                        const editPostButton = document.querySelector(".edit-button");
+            const editPostButton = document.querySelector(".edit-button");
 
-                        const element = e.target;
+            const element = e.target;
 
-                        console.log(element);
+            console.log(element);
 
-                        const elementClasses = element.classList;
+            const elementClasses = element.classList;
 
-                        console.log(elementClasses[1]);
+            console.log(elementClasses[1]);
 
-                        editPostButton.classList.add(`${elementClasses[1]}`);
+            editPostButton.classList.add(`${elementClasses[1]}`);
 
         });
 
